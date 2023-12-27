@@ -1,0 +1,82 @@
+/* Estilos de las tarjetas de columnas */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+
+.card {
+  margin: 0.8rem;
+  padding: 0.rem;
+  max-width: 900px;
+  max-height: 900px;
+  box-shadow: 02px 02px 03px #1b3487be;
+  border-radius: 1.1rem;
+  transition: 0.9s ease;
+  color: #ffffff;
+  background-color:#5d0aab23
+} 
+
+.card:hover {
+  box-shadow: 03px 03px 03px #a77e1f;
+  color: #ffffff;
+  background-image: linear-gradient(to left, #30077b97, #064d7997, #15687f5c);
+  transform: scale(1.04);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-align: center;
+  
+
+}
+
+#logoCards {
+  width: 70px !important;
+  height: 70px !important;
+  border-radius: 1.2rem;
+  margin-right: 5px;
+  float: right;
+  
+
+}
+
+#CardButton {
+  border-radius: 1rem;
+  background-color: transparent;
+  border: 0.1rem solid #88b0f5;
+  color: #ffffff;
+  transition: 0.9s ease;
+  &:hover {
+    background-color: #5392de;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+}
+
+
+@media screen and (max-width: 700px) {
+  .card{
+    max-width: 90%;
+    max-height: 90%;
+  }
+}
+
+.gridcard {
+  display: grid;
+  grid-gap: 0.1rem;
+  position: relative;
+  font-family: "Roboto";
+
+}
+
+@media (min-width: 960px) {
+  .gridcard {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas por línea */
+  }
+}
+
+@media (max-width: 960px) {
+  .gridcard {
+    grid-template-columns: 1fr; /* 1 columna por línea */
+  }
+}
+

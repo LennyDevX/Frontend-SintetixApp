@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+#tituloweb {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 0.3rem;
+  padding: 0.3rem;
+  font-family: 'Roboto';
+  color: #ffffff;
+  text-shadow: 8px 6px 7px #000000;
+  text-align: center;
+
+}
+/* Estilos para la barra de navegación */
+
+.navbar {
+  z-index: 1002; /* Asegúrate de que este valor sea mayor que el z-index de las tarjetas */
+  position: relative;
+  margin: 0.4rem;
+  border-radius: 25px ;
+  width: auto;
+  background-color: #5d0aab23;
+  
+}
+
+#LogoNavbar {
+  width: 75px !important;
+  height: 75px !important;
+  border-radius: 1.2rem;
+
+}
+
+.collapse.navbar-collapse {
+  justify-content: flex-end;
+  
+}
+
+/* Estilos para la barra de navegación en pantallas pequeñas */
+
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+  }
+
+  .collapse.navbar-collapse {
+      justify-content: center;
+  }
+
+  .nav-item {
+      padding: 0.5rem 0;
+  }
+}
+
+/* Estilo para el botón de búsqueda en pantallas grandes */
+@media (min-width: 768px) {
+  #searchButton {
+    display: inline-block; /* o "block", dependiendo de tus necesidades */
+  }
+}
+
+/* Estilo para la barra de búsqueda en pantallas pequeñas */
+@media (max-width: 767px) {
+  #searchButton {
+    display: none; /* Oculta el botón de búsqueda en pantallas pequeñas */
+  }
+  .search-bar {
+    /* Estilos para optimizar la barra de búsqueda en pantallas pequeñas */
+    width: 100%; /* Por ejemplo, puedes hacer que la barra de búsqueda ocupe todo el ancho disponible */
+  }
+}
+
+/* Estilos de los botones de la barra de navegacion, lado izquierdo */
+.nav-link { 
+  color: #ffffff;
+  margin: 0.4rem;
+  padding: 0.4rem;
+  transition: 1s ease;
+  font-family: "Roboto";
+  &:hover {
+    color: #000000;
+    transition: 1s ease;
+    transform: scale(1.1);
+    border-radius: 1rem;
+    background-image: linear-gradient(to left, #2b0cf2b0, #6066dac1);
+  }
+}
+
+.bg-dark {
+  border-radius: 1rem;
+  padding: 0.3rem 0.3rem;
+  margin-top: 0.5rem;
+  border: 0.4px solid #ffffff;
+  transition: 1s ease;
+  z-index: 1004; /* Asegúrate de que este valor sea mayor que el z-index de las tarjetas y la barra de navegación */
+
+}
+
+.dropdown-menu {
+  border-radius: 1rem;
+  background: #4a53f586;
+  padding: 0.3rem 0.3rem;
+  margin-top: 0.5rem;
+  position: relative;
+  justify-content: center;
+  border: 0.4px solid #ffffff;
+  box-shadow: 4px 4px 5px #3974e393;
+  transition: 1s ease;
+  z-index: 1004; /* Asegúrate de que este valor sea mayor que el z-index de las tarjetas y la barra de navegación */
+
+}
+
+.dropdown-menu .dropdown-item {
+  padding: auto;
+  margin: auto;
+  border-radius: 2rem;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background: #040c626f;
+  padding-right: 1rem;
+  
+}
+
+/* Estilos para el botón de búsqueda en pantallas pequeñas */
+
+@media (max-width: 767px) {
+  #searchButton {
+    display: none; /* Oculta el botón de búsqueda en pantallas pequeñas */
+  }
+  .search-bar {
+    /* Estilos para optimizar la barra de búsqueda en pantallas pequeñas */
+    width: 100%; /* Por ejemplo, puedes hacer que la barra de búsqueda ocupe todo el ancho disponible */
+  }
+}
+@media screen and (max-width: 500px) {
+  .btn-round {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 600px) and (max-height: 600px) {
+  .btn-round {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.875rem;
+  }
+
+  .navbar {
+      flex-direction: column;
+      display: block;
+      margin-top: 2rem;
+  }
+
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+      margin: 10px auto;
+  }
+
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+      font-size: 10px;
+  }
+}
+
+/* Estilos para la barra de búsqueda */
+
+#searchBar {
+  border-radius: 1.1rem;
+  border: 0.1rem solid #88b0f5;
+  background-color: transparent;
+  color: #ffffff;
+  padding: auto 0.5rem;
+  margin: auto;
+  &:hover {
+    border-radius: 1.1rem;
+    border: 0.1rem solid #1e0687;
+    color: #ffffff;
+    background-color: transparent;
+    margin: auto;
+    transition: 1s ease;
+}
+}
+
+#searchBar::placeholder { 
+  color: rgba(255, 255, 255, 0.582);
+}
+
+#searchBarButton {
+  border-radius: 1.1rem;
+  border: 0.1rem solid #88b0f5;
+  background:transparent;
+  text-align: center;
+  color: #ffffff;
+  margin-left: 0.4rem;
+  transition: 1s ease;
+  &:hover {
+    border: 1px solid #310687;
+    color: #000000;
+    transition: 1.3s ease;
+    transform: scale(1.1);
+    background-image: linear-gradient(to left, #2b0cf2b0, #6066dac1);
+  
+  }
+}
+
+/* Estilos de los botones de la barra de navegacion, lado derecho */
+
+#ButtonNavBar {
+  color: #ffffff;
+  margin: 0.6rem;
+  padding: 0.6rem;
+  transition: 1s ease;
+  &:hover {
+    color: #000000;
+    transition: 1s ease;
+    transform: scale(1.1);
+    border-radius: 1rem;
+    background-image: linear-gradient(to left, #2b0cf2b0, #6066dac1);
+  }
+}

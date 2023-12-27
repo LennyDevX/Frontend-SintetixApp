@@ -1,0 +1,71 @@
+
+body {
+  font-size: 1.1rem;
+  font-weight: 900;
+  margin: 0.3rem;
+  padding: 0.3rem;
+  font-family: sans-serif;
+  background-image: url(/Img/SkyAnime.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-position: center;
+  max-width: 1336px;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin: auto;
+  -webkit-text-size-adjust: 100%; /* Propiedad original */
+  text-size-adjust: 100%; /* Propiedad agregada para mejorar la compatibilidad con los navegadores */
+}
+
+.ModalStyle {
+  background-image: linear-gradient(to left, #88b0f5, #a24baa);
+  font-family: "Roboto";
+}
+
+.ModalTitle {
+  color: #000000;
+  font-weight: 900;
+  font-size: 1.2rem;
+  margin: 0.3rem;
+  padding: 0.3rem;
+}
+
+.GroundStyle {
+  background-color: #000000;    
+}
+
+.btn-login {
+  margin-top: 0.9rem;
+  font-size: 0.9rem;
+  border-radius: 1.2rem;
+  border-bottom: 1px solid #000000;
+  border: 0.1rem solid #fff;
+  background-color: transparent;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 1.2rem auto;
+  display: block;
+  text-align: center; /* Cambia esto a 'center' */
+  transition: 0.8s ease;
+}
+
+.btn-login:hover {
+  background-image: linear-gradient(to left, #88b0f5, #a24baa);
+}
+
+.btn-Registro {
+  font-size: 0.9rem;
+  border-radius: 1.2rem;
+  border-bottom: 10px solid #000000;
+  border: 0.1rem solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  margin: 1.2rem auto;
+  display: block;
+  text-align: center; /* Cambia esto a 'center' */
+  transition: 0.8s ease;
+}
+
+.btn-Registro:hover {
+  background-image: linear-gradient(to left, #88b0f5, #a24baa);
+}

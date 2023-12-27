@@ -1,1 +1,1 @@
-# SintetixApp
+# RDX PROJECT
