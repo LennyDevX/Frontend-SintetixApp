@@ -25,5 +25,6 @@ NPM RUN DEV
 Run the app on a local server using the command
 npm install (install dependencies)
 npm run dev (run application)
+![LogoNavbar](https://github.com/LennyDevX/SintetixApp/assets/71667982/126886c1-ae54-4aae-be81-d4003141b73f)
 
 ![conectando](https://github.com/LennyDevX/SintetixApp/assets/71667982/3787c5a8-faa6-4818-9759-5056a5ffb34d)
