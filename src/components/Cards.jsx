@@ -7,11 +7,15 @@ import '../css/components/TeamCards.css';
 export function TeamCards({ title, description, buttonText, link, logo, logo2 }) {
   return (
     <Card>
-      <Card.Body>
+      <Card.Body >
         {/* Ajusta el tamaño según tus necesidades */}
-        <Card.Title>  <strong>{title}</strong></Card.Title>
+        <div className='container'>
+
+        <Card.Title>  <>{title}</></Card.Title>
+        <img src={logo} alt="Logo" id='logoCards' />
         <Card.Text className="Card-Text">{description}</Card.Text>
-        <Button id="CardButton" href={link}>{buttonText}</Button><img src={logo} alt="Logo" id='logoCards' />
+        <Button  id="CardButton" href={link}>{buttonText}</Button>
+        </div>
       </Card.Body>
     </Card>
   );
@@ -23,7 +27,6 @@ TeamCards.propTypes = {
   buttonText: PropTypes.string,
   link: PropTypes.string,
   logo: PropTypes.string,
-  logo2: PropTypes.string
 }
 
 export default TeamCards;

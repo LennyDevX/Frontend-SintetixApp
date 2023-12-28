@@ -4,8 +4,12 @@ import User from './models/user.js';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 
-
 const router = express.Router();
+
+// Ruta principal
+router.get('/', (req, res) => {
+  res.send('Bienvenido a la página principal de mi aplicación');
+});
 
 // Lista de Usuarios Base de Datos
 router.get('/users', async (_, res) => {
@@ -37,7 +41,6 @@ router.post('/register', async (req, res) => {
 });
 
 // Login de usuarios
-
 router.post('/login', async (req, res) => {
     const { email, password } = req.body;
 

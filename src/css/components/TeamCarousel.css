@@ -1,26 +1,5 @@
-.carousel {
-    display: block;
-    justify-content: center;
-    margin: 5px auto; /* Ajusta el margen como necesites */
-    padding: 5px; /* Ajusta el relleno como necesites */
-    width: 100%; /* Ajusta el ancho como necesites */
-    height: 500px; /* Ajusta la altura como necesites */
-    border-radius: 15px; /* Añade bordes redondos */
-    background: transparent; /* Fondo transparente */
-    transition: all 0.5s ease; /* Animaciones suaves */
-}
-
-.carousel-item img {
-    height: 100%;
+.cover1 {
     width: 100%;
-    border-radius: 15px; /* Añade bordes redondos a las imágenes también */
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    display: none; /* Oculta los controles de navegación */
-}
-.d-block {
-    height: 500px; /* Ajusta la altura como necesites */
-    width: 100%;
+    height: 100px;
+    object-fit: cover;
 }

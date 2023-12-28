@@ -1,21 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
 
-body {
-  font-size: 1.1rem;
-  font-weight: 900;
-  margin: 0.3rem;
-  padding: 0.3rem;
-  font-family: sans-serif;
-  background-image: url(/Img/SkyAnime.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-attachment: fixed;
-  background-position: center;
-  max-width: 1336px;
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  margin: auto;
-  -webkit-text-size-adjust: 100%; /* Propiedad original */
-  text-size-adjust: 100%; /* Propiedad agregada para mejorar la compatibilidad con los navegadores */
-}
 
 .ModalStyle {
   background-image: linear-gradient(to left, #88b0f5, #a24baa);
