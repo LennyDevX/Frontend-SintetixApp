@@ -12,7 +12,7 @@ Teamwork: We believe in the power of collaboration and in the importance of work
 Innovation: We strive to be at the forefront of technology and foster an environment of innovation and creativity.
 Quality: We commit to offer only the best tools and resources to our community of developers.
 Integrity: We operate with honesty and transparency, and value the trust that our community places in us.
-How to start?
+How to start? 
 To start using Sintetix Hub, simply join our server on Discord https://discord.gg/fMPth2zU If you have any questions or need help, do not hesitate to contact us. Any developer can collaborate and make Pull Request to add functions and contribute to the development of the web.
 
 DEV BRANCH
