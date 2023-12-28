@@ -1,4 +1,3 @@
-![conectando](https://github.com/LennyDevX/SintetixApp/assets/71667982/5a20ce63-62c9-4cf2-be7f-70c734a1fbf0)
 
 
 
@@ -28,5 +27,6 @@ We work with React to offer high capabilities of functions and customization as 
 NPM RUN DEV
 Run the app on a local server using the command
 npm install (install dependencies)
+
 npm run dev (run application)
 
