@@ -1,3 +1,4 @@
+![conectando](https://github.com/LennyDevX/SintetixApp/assets/71667982/5a20ce63-62c9-4cf2-be7f-70c734a1fbf0)
 Sintetix Hub
 Sintetix Hub is a garden for developers, a space of discovery and learning where you can find from the most hidden libraries to the most powerful framework. Our goal is to be the most complete platform for the search of trending development resources.
 
