@@ -26,4 +26,4 @@ Run the app on a local server using the command
 npm install (install dependencies)
 npm run dev (run application)
 
-![conectando](https://github.com/LennyDevX/SintetixApp/assets/71667982/3787c5a8-faa6-4818-9759-5056a5ffb34d)
+![conectando](https://github.com/LennyDevX/SintetixApp/assets/71667982/04aff753-ccae-4be0-a058-ce1e5dc2fd49)
