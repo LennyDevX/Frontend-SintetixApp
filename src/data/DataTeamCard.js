@@ -1,9 +1,9 @@
 import SintetixLogo from '../../Img/SintetixLogo.png'
 import ReactLogo from '../../Img/ReactLogo.png'
-import DiscordLogo from '../../Img/DiscordLogo.png'
 import NodeLogo from '../../Img/NodeLogo.png'
 import Copilot from '../../Img/CopilotLogo.png'
 import BootstrapLogo from '../../Img/BootstrapLogo.png'
+import Dc from '../../Img/LogoNavbar.png'
 
 export const DataTeamCards = [
   {
@@ -18,7 +18,8 @@ export const DataTeamCards = [
     description: "Estamos siempre en la busqueda continua de nuevos talentos, tenemos una comunidad en Discord donde nos reunimos y compartimos ideas, si quieres colaborar con nosotros, unete a nuestro Discord y cuentanos tu idea, o si quieres ayudar en algun proyecto, tambien puedes hacerlo. Somos una comunidad diversa, cualquiera que sea tu especialidad tenemos un espacio para ti y tu creatividad.",
     ButtonText : "Unirse a Discord",
     link: "https://discord.gg/uM8wTs4x",
-    logo: DiscordLogo,
+    logo: Dc,
+
 
   }, 
   {

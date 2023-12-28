@@ -1,5 +1,5 @@
 
-
+![SintetixLogo](../SintetixApp/Img/conectando.png)
 
 Sintetix Hub
 Sintetix Hub is a garden for developers, a space of discovery and learning where you can find from the most hidden libraries to the most powerful framework. Our goal is to be the most complete platform for the search of trending development resources.
