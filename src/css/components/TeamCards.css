@@ -1,50 +1,81 @@
 /* Estilos de las tarjetas de columnas */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
+body {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(218, 165, 32, 0.8), rgba(128, 0, 128, 0.8));
+  font-family: "Roboto";
+  margin: 1rem;
+  padding: 0rem;
+}
 
 .card {
-  margin: 0.8rem;
-  padding: 0.rem;
-  max-width: 900px;
-  max-height: 900px;
-  box-shadow: 02px 02px 03px #1b3487be;
-  border-radius: 1.1rem;
-  transition: 0.9s ease;
-  color: #ffffff;
-  background-color:#5d0aab23
-} 
+    margin: 0.8rem;
+    padding: 0.rem;
+    max-width: 800px;
+    height: auto;
+    box-shadow: 02px 02px 03px #1b3487be;
+    border-radius: 1.1rem;
+    transition: 0.9s ease;
+    color: #ffffff;
+    background-color:#0e0d0da1;
+    font-family: "Roboto";
+    &:hover {
+      box-shadow: 6px 5px 7px 7px #e32828a3;
+      color: #ffffff;
+      background-image: linear-gradient(to left, #c3150cc4, #de3d0cac, #c7083e9e);
+      transform: scale(1.04);
 
-.card:hover {
-  box-shadow: 03px 03px 03px #a77e1f;
-  color: #ffffff;
-  background-image: linear-gradient(to left, #30077b97, #064d7997, #15687f5c);
-  transform: scale(1.04);
+  } 
 }
+  
+
+
+.body {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+
+
+
 
 .card-title {
   font-size: 1.2rem;
   font-weight: 900;
+  margin: 10px 5px;
   text-align: center;
-  
+
 
 }
 
 #logoCards {
-  width: 70px !important;
-  height: 70px !important;
+  width: 80px !important;
+  height: 80px !important;
   border-radius: 1.2rem;
-  margin-right: 5px;
+  margin-right: 6px;
+  margin-top: 4px;
+  margin-bottom: 4px;
   float: right;
-  
+
 
 }
 
+.card-text {
+  font-size: 1rem;
+  align-content: center;
+  margin: 5px 15px;
+  text-align: center;
+}
+
 #CardButton {
-  border-radius: 1rem;
+  border-radius: 1.1rem;
+  color: #fff;
+  font-size: 15px ;
   background-color: transparent;
   border: 0.1rem solid #88b0f5;
-  color: #ffffff;
-  transition: 0.9s ease;
+  margin: 15px 5px;;
+  padding: 8px 10px;
+  transition: 1.1s ease;
   &:hover {
     background-color: #5392de;
     color: #ffffff;
@@ -52,31 +83,43 @@
 }
 }
 
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 960px) {
   .card{
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
   }
+  
+}
+
+  .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .gridcard {
   display: grid;
-  grid-gap: 0.1rem;
-  position: relative;
-  font-family: "Roboto";
+  grid-gap: 1rem;
+  padding: 10px;
+  position: absolute;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
 }
 
 @media (min-width: 960px) {
   .gridcard {
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas por línea */
+    grid-template-columns: repeat(3, 1fr); /* 2 columnas por línea */
+    
   }
 }
 
 @media (max-width: 960px) {
   .gridcard {
-    grid-template-columns: 1fr; /* 1 columna por línea */
+    grid-template-columns: 2fr; /* 1 columna por línea */
   }
 }
+
 

@@ -1,0 +1,8 @@
+.cover1 {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 100%; /* Mantiene la relación de aspecto de la imagen */
+    object-fit: cover; /* La imagen se redimensionará para cubrir todo el contenedor, recortándose si es necesario */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Añade una sombra alrededor de la imagen */
+    transition: all 0.3s ease; /* Suaviza los cambios en las propiedades CSS */
+}
