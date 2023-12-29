@@ -27,13 +27,12 @@ function HomePage() {
 
             <section className="gridcard">
             
-            <Carousel imageSrc={Image1} altText="Primera imagen" />
-            <Carousel imageSrc={Image2} altText="Segunda imagen" />
-            <Carousel imageSrc={image3} altText="Tercera imagen" />
-                {DataTeamCards.map((team) => ( 
+                <Carousel imageSrc={Image1} altText="Primera imagen" />
+                <Carousel imageSrc={Image2} altText="Segunda imagen" />
+                <Carousel imageSrc={image3} altText="Tercera imagen" />
+                {DataTeamCards.map((team, index) => ( 
                     <TeamCards
-                        key={team.index}
-                        // Cambiado a un valor único
+                        key={index}
                         title={team.title}
                         description={team.description}
                         link={team.link}

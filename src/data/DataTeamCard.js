@@ -5,7 +5,7 @@ import Copilot from '../../Img/CopilotLogo.png'
 import BootstrapLogo from '../../Img/BootstrapLogo.png'
 import Dc from '../../Img/LogoNavbar.png'
 
-export const DataTeamCards = [
+export const DataTeamCards = [ 
   {
     title: " 💻 Sintetix Hub 💻",
     description: "Somos una organizacion Open Source que desarrolla software y herramientas para la comunidad de Sintetix, creemos en el trabajo colectivo, la comunidad levanta los mejores proyectos segun vayan surgiendo diferentes necesidades. WebApp, IA, Bots, etc. Construimos desde 0 y 100% personalizado a los ajsutes de cualquier cliente que dese adquirir nuestros futuros servicios de desarrllo",
@@ -19,8 +19,6 @@ export const DataTeamCards = [
     ButtonText : "Unirse a Discord",
     link: "https://discord.gg/uM8wTs4x",
     logo: Dc,
-
-
   }, 
   {
     title: "We 💙 React",
@@ -28,11 +26,10 @@ export const DataTeamCards = [
     ButtonText : "Saber mas",
     link: "https://es.reactjs.org/",
     logo: ReactLogo,
-
   },
   {
     title: "💚 NodeJS & Express 🚀",
-    description: "para el backend decidimos usar express, un framework de Node.js, que nos permite crear aplicaciones web y API de una manera muy sencilla, ademas de ser muy rapido y escalable. Es perfecto para aplicaciones web modernas, con grandes capacidades de procesamiento y caracteristicas de vanguardia como WebSockets y streaming. Incluye conmpoentes de seguridad, manejo de errores, optimizaciones, etc.",
+    description: "Para el backend decidimos usar express, un framework de Node.js, que nos permite crear aplicaciones web y API de una manera muy sencilla, ademas de ser muy rapido y escalable. Es perfecto para aplicaciones web modernas, con grandes capacidades de procesamiento y caracteristicas de vanguardia como WebSockets y streaming. Incluye conmpoentes de seguridad, manejo de errores, optimizaciones, tecnicas SSR para mejroar el renderizado, etc.",
     link: "https://www.google.com",
     ButtonText : "Saber mas",
     logo: NodeLogo,
