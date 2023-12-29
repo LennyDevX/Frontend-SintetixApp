@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
+import LoginForm from './LoginForm';
+import RegisterForm from './RegisterForm';
 import {
   MdNotifications,
   MdAccountCircle,
@@ -15,6 +17,8 @@ const Navbar = () => {
   const [searching, setSearching] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchText, setSearchText] = useState(""); // Nuevo estado para el texto de búsqueda
+  const [showLogin, setShowLogin] = useState(false);
+  const [showRegister, setShowRegister] = useState(false);
   const menuRef = useRef(); // Referencia para el menú
 
   useEffect(() => {
@@ -46,6 +50,16 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const handleLoginClick = () => {
+    setShowLogin(true);
+    setMenuOpen(false);
+  };
+
+  const handleRegisterClick = () => {
+    setShowRegister(true);
+    setMenuOpen(false);
+  };
+
   return (
     <nav className="navbar">
       <div className="left-group">
@@ -63,7 +77,6 @@ const Navbar = () => {
           value={searchText}
           onKeyDown={handleSearch}
           onChange={handleSearch}
-          
         />
         {searching ? <MdAutorenew className="spinning" /> : <MdSearch />}
       </div>
@@ -81,12 +94,14 @@ const Navbar = () => {
           <MdMenu />
         </button>
         <div className={`menu ${menuOpen ? "open" : ""}`} ref={menuRef}>
-          <button id="ButtonSub" className="submenu-button navbar-icon">
+          <button id="ButtonSub" className="submenu-button navbar-icon" onClick={handleLoginClick}>
             <MdLockOpen /> Login
           </button>
-          <button id="ButtonSub" className="submenu-button navbar-icon">
+          <LoginForm show={showLogin} onHide={() => setShowLogin(false)} />
+          <button id="ButtonSub" className="submenu-button navbar-icon" onClick={handleRegisterClick}>
             <MdPersonAdd /> Registrarse
           </button>
+          <RegisterForm show={showRegister} onHide={() => setShowRegister(false)} />
         </div>
       </div>
     </nav>

@@ -31,7 +31,7 @@ export const DataTeamCards = [
   },
   {
     title: "💚 NodeJS & Express 🚀",
-    description: "para el backend decidimos usar express, un framework de Node.js, que nos permite crear aplicaciones web y API de una manera muy sencilla, ademas de ser muy rapido y escalable. Es perfecto para aplicaciones web modernas, con grandes capacidades de procesamiento y caracteristicas de vanguardia como WebSockets y streaming. Incluye conmpoentes de seguridad, manejo de errores, optimizaciones, etc.",
+    description: "Para el backend decidimos usar express, un framework de Node.js, que nos permite crear aplicaciones web y API de una manera muy sencilla, ademas de ser muy rapido y escalable. Es perfecto para aplicaciones web modernas, con grandes capacidades de procesamiento y caracteristicas de vanguardia como WebSockets y streaming. Incluye conmpoentes de seguridad, manejo de errores, optimizaciones, tecnicas SSR para mejroar el renderizado, etc.",
     link: "https://www.google.com",
     ButtonText : "Saber mas",
     logo: NodeLogo,
