@@ -1,3 +1,6 @@
+
+![SintetixLogo](../SintetixApp/Img/conectando.png)
+
 Sintetix Hub
 Sintetix Hub is a garden for developers, a space of discovery and learning where you can find from the most hidden libraries to the most powerful framework. Our goal is to be the most complete platform for the search of trending development resources.
 
@@ -12,7 +15,7 @@ Teamwork: We believe in the power of collaboration and in the importance of work
 Innovation: We strive to be at the forefront of technology and foster an environment of innovation and creativity.
 Quality: We commit to offer only the best tools and resources to our community of developers.
 Integrity: We operate with honesty and transparency, and value the trust that our community places in us.
-How to start?
+How to start? 
 To start using Sintetix Hub, simply join our server on Discord https://discord.gg/fMPth2zU If you have any questions or need help, do not hesitate to contact us. Any developer can collaborate and make Pull Request to add functions and contribute to the development of the web.
 
 DEV BRANCH
@@ -24,6 +27,6 @@ We work with React to offer high capabilities of functions and customization as 
 NPM RUN DEV
 Run the app on a local server using the command
 npm install (install dependencies)
+
 npm run dev (run application)
 
-![conectando](https://github.com/LennyDevX/SintetixApp/assets/71667982/3787c5a8-faa6-4818-9759-5056a5ffb34d)
