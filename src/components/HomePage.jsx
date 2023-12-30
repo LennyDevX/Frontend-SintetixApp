@@ -8,6 +8,7 @@ import Carousel from './Carousel';
 import Image1 from '../../Img/conectando.gif';
 import Image2 from '../../Img/conectando2.gif';
 import image3 from '../../Img/conectando4.gif';
+import Footer from './Footer'; // Importación del componente Footer
 
 function HomePage() {
     const [showLogin, setShowLogin] = useState(false);
@@ -40,6 +41,8 @@ function HomePage() {
                         logo={team.logo}
                     />
                 ))}
+                <Footer /> {/* Agregado el componente Footer */}
+
             </section>
 
             <LoginForm show={showLogin} onHide={() => setShowLogin(false)} />

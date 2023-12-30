@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import '../css/components/TeamCards.css';
+import '../css/components/TeamCards.css'; // Importación del archivo CSS sin asignación a una variable
 
 export function TeamCards({ title, description, buttonText, link, logo, logo2 }) {
   return (
