@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ListGroup } from 'react-bootstrap';
 import axios from 'axios';
+import '../css/components/BaseDb.css';
 
 const UserList = () => {
     const [users, setUsers] = useState([]);
@@ -21,8 +22,8 @@ const UserList = () => {
     return (
         <ListGroup>
             {users.map(user => (
-                <ListGroup.Item key={user._id}>
-                    {user.username} - {user.email}
+                <ListGroup.Item key={user._id} className="user-list-item">
+                    <span className="user-name">{user.username}</span> - <span className="user-email">{user.email}</span>
                 </ListGroup.Item>
             ))}
         </ListGroup>

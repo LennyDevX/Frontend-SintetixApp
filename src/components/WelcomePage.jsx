@@ -1,21 +1,39 @@
-// WelcomePage.jsx
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect, useCallback } from 'react';
+import { DataTeamCards2 } from '../data/DataTeamCard2'; 
+import NavBar from './NavBar'; 
+import RegisterForm from './RegisterForm'; 
+import LoginForm from './LoginForm';
+import TeamCards2 from './CArds2'; // Importación corregida
 
-function WelcomePage() {
-    const navigate = useNavigate();
+function HomePage() {
+    const [showLogin, setShowLogin] = useState(false);
+    const [showRegister, setShowRegister] = useState(false);
 
-    const handleButtonClick = () => {
-        navigate('/'); // Asume que la ruta de tu HomePage es '/home'
-    };
+    const onLoginClick = useCallback(() => {
+        setShowLogin(true);
+    }, []);
+
+    const onRegisterClick = useCallback(() => {
+        setShowRegister(true);
+    }, []);
 
     return (
         <div>
-            <h1>Bienvenido</h1>
-            <p>¡Gracias por registrarte!</p>
-            <button onClick={handleButtonClick}>Ir a la página de inicio</button>
+            <NavBar onLoginClick={onLoginClick} onRegisterClick={onRegisterClick} />
+
+            <section className="gridcard">
+                {DataTeamCards2.map((team, index) => ( 
+                    <TeamCards2 className="cover1" key={index} title={team.title} description={team.description} link={team.link} buttonText={team.ButtonText} logo={team.logo} />
+                ))}
+                {DataTeamCards2.map((team, index) => ( 
+                    <TeamCards2 key={index} title={team.title} description={team.description} link={team.link} buttonText={team.ButtonText} logo={team.logo} />
+                ))}
+            </section>
+
+            <LoginForm show={showLogin} onHide={() => setShowLogin(false)} />
+            <RegisterForm show={showRegister} onHide={() => setShowRegister(false)} />
         </div>
     );
 }
 
-export default WelcomePage;
+export default HomePage; // Agregado React.memo para evitar renderizados innecesarios

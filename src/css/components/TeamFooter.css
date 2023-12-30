@@ -1,0 +1,46 @@
+/* Footer.css */
+.footer {
+    background-color: rgba(0, 0, 0, 0.648);
+    color: white;
+    width: 100%;
+    font-size: 0.7em;
+    text-align: center;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.507);
+    
+}
+
+.footer .list-group-item {
+    background-color: transparent;
+    border: none;
+    text-align: center
+
+}
+
+.footer .list-group-item a {
+    color: white;
+    text-decoration: none;
+
+ 
+}
+
+.footer .container {
+
+    display: inline;
+    width: 100%;
+
+}
+
+/* Estilos agregados para Row y Col */
+.footer .row {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.footer .col {
+    padding: 0;
+    margin: 0;
+    
+}
